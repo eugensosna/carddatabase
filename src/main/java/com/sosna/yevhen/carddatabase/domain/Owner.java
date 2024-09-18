@@ -13,7 +13,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 
 @Entity
-@JsonIgnoreProperties({"hibernateLazyInitializer","handler"})public class Owner {
+@JsonIgnoreProperties()
+public class Owner {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long ownerid;

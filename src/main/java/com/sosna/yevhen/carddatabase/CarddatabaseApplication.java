@@ -21,7 +21,9 @@ public class CarddatabaseApplication implements CommandLineRunner {
 	private final CarRepository repository;
 	private final OwnerRepository orepository;
 
-	public CarddatabaseApplication(CarRepository repository, OwnerRepository orepository) {
+
+	public CarddatabaseApplication(CarRepository repository, 
+			OwnerRepository orepository) {
 		this.repository = repository;
 		this.orepository = orepository;
 	}
