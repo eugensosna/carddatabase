@@ -44,24 +44,16 @@ public class CarddatabaseApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		// TODO: test many to many 55
-		List<Car> cars = repository.findByModel("Mustang");
-
-		if (cars.size() <=0) {
-
-			Owner owner1 = new Owner("John", "Johnson");
-			orepository.save(owner1);
-
-			repository.save(new Car("Ford", "Mustang", "Redd", "Ob-1027", 2015, 5900, owner1));
-			repository.save(new Car("Ford", "Mustang", "Red", "ADF-1121", 2023, 59000, owner1));
-			repository.save(new Car("Nissan", "Leaf", "White", "SSJ-3002", 2020, 29000, owner1));
-			repository.save(new Car("Toyota", "Prius", "Silver", "KKO-0212", 2022, 39000, owner1));
-		}
-		// Fetch all cars
-		for (Car car : repository.findAll()) {
-
-			logger.info("brand:{} , model :{}", car.getBrand(), car.getModel());
-
+		// TODO Auto-generated method stub
+		repository.save(new Car("Ford", "Mustang", "Redd", "Ob-1027", 2015, 5900));
+		repository.save(new Car("Ford", "Mustang", "Red", "ADF-1121", 2023, 59000));
+		repository.save(new Car("Nissan", "Leaf", "White", "SSJ-3002", 2020, 29000));
+		repository.save(new Car("Toyota", "Prius", "Silver", "KKO-0212", 2022, 39000));
+		
+		//Fetch all cars
+		for(Car car: repository.findAll()) {
+			logger.info("brand:{} , model :{}",car.getBrand(), car.getModel());
+			
 		}
 	}
 
