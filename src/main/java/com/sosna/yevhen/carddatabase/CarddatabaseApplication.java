@@ -45,6 +45,7 @@ public class CarddatabaseApplication implements CommandLineRunner {
 
 		if (repository.findByModel("Mustang").size() <= 0) {
 			Owner owner1 = new Owner("Mary", "Robinson");
+			orepository.save(owner1);
 
 			repository.save(new Car("Ford", "Mustang", "Redd", "Ob-1027", 2015, 5900, owner1));
 			repository.save(new Car("Ford", "Mustang", "Red", "ADF-1121", 2023, 59000, owner1));
