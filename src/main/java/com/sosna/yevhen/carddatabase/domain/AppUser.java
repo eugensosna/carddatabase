@@ -18,6 +18,7 @@ public class AppUser {
 	private String password;
 	@Column(nullable = false)
 	private String role;
+	public AppUser() {}
 
 // Constructors, getters and setters
 	public AppUser(String username, String password, String role) {
