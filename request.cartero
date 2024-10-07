@@ -1,0 +1,9 @@
+version = 1
+url = "http://localhost:8081/api/cars"
+method = "GET"
+
+[headers]
+Authorization = "BearereyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI4MzAwNTI0fQ.9LJrCMCqtwcyK3cpJiN2urpmG8dP5iQYhVGqRw1n44g"
+
+[variables]
+Authorization = "BearereyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c2VyIiwiZXhwIjoxNzI4MzAwNTI0fQ.9LJrCMCqtwcyK3cpJiN2urpmG8dP5iQYhVGqRw1n44g"

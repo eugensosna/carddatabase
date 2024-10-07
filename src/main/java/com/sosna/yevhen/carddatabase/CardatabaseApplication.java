@@ -18,31 +18,22 @@ import com.sosna.yevhen.carddatabase.domain.Owner;
 import com.sosna.yevhen.carddatabase.domain.OwnerRepository;
 
 @SpringBootApplication
-public class CarddatabaseApplication implements CommandLineRunner {
+public class CardatabaseApplication implements CommandLineRunner {
 
-	private static final Logger logger = LoggerFactory.getLogger(CarddatabaseApplication.class);
+	private static final Logger logger = LoggerFactory.getLogger(CardatabaseApplication.class);
 	private final CarRepository repository;
 	private final OwnerRepository orepository;
 	private final AppUserRepository urepository;
 
-	public CarddatabaseApplication(CarRepository repository, OwnerRepository orepository, AppUserRepository urepository) {
+	public CardatabaseApplication(CarRepository repository, OwnerRepository orepository, AppUserRepository urepository) {
 		this.repository = repository;
 		this.orepository = orepository;
 		this.urepository = urepository;
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(CarddatabaseApplication.class, args);
+		SpringApplication.run(CardatabaseApplication.class, args);
 		logger.info("Application started");
-	}
-
-	public static long sizeOfIterable(Iterable data) {
-		if (data instanceof Collection) {
-			return ((Collection<?>) data).size();
-		}
-		long counter = StreamSupport.stream(data.spliterator(), false).count();
-
-		return counter;
 	}
 
 	@Override

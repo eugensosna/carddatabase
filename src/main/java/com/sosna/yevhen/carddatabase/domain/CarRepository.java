@@ -10,7 +10,7 @@ import java.util.List;
 
 import org.slf4j.*;
 import com.sosna.yevhen.carddatabase.domain.Car;
-import com.sosna.yevhen.carddatabase.domain.*;
+//import com.sosna.yevhen.carddatabase.domain.*;
 
 //@RepositoryRestResource(path="vehicles")
 @RepositoryRestResource

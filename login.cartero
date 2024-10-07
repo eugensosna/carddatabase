@@ -1,0 +1,12 @@
+version = 1
+url = "http://localhost:8081/login"
+method = "POST"
+
+[body]
+type = "raw"
+format = "json"
+body = "{\"username\":\"user\", \"password\":\"user\"}"
+
+[headers]
+
+[variables]

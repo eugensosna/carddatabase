@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.sosna.yevhen.carddatabase.domain.AccountCredentials;
 import com.sosna.yevhen.carddatabase.service.JwtService;
 
+@RestController
 public class LoginController {
 	private final JwtService jwtService;
 	private final AuthenticationManager authenticationManager;
